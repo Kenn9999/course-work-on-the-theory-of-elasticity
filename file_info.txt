@@ -1,0 +1,64 @@
+1. models/material.point.py
+
+'material.point.py' contains the 'MaterialPoint' class, which represents a material point.
+Each material point has coordinates 'x', 'y' and velocity components 'vx', 'vy'.
+This class is used to represent individual points in space.
+
+2. models/material_body.py
+
+'material_body.py' contains the 'MaterialBody' class, which represents a material body consisting of objects of the MaterialPoint class.
+A material body has a radius, a list of points and an add_point method that adds a new material point to the body.
+
+3. models/trajectory.py
+
+'trajectory.py' contains the 'Trajectory' class, which represents the trajectory of movement.
+A trajectory is a set of points in space recorded at a specific point in time.
+
+4. models/space_point.py
+
+'space_point.py' contains the 'SpacePoint' class, which represents a point in space with coordinates 'x' and 'y'.
+This class is used to represent points in space.
+
+5. models/stream_line.py
+
+'stream_line.py' contains the 'StreamLine' class, which represents a streamline.
+A streamline is a sequence of points in space that describe the direction of motions of a particles.
+
+6. models/space.py
+
+'space.py' contains the 'Space' class, which represents the space (region) where a material body moves.
+The space is limited by the minimum and maximum values of the 'x' and 'y' coordinates.
+
+---------------------------------------------------------------------------------------------------
+
+1. methods/runge_kutta.py
+
+'runge_kutta.py' contains function 'runge_kutta_method', which one realises numerical Runge-Kutta method to solve a system of differential equations.
+This method is used to integrate the movement of a material body in space.
+
+2. methods/create_body.py
+
+'create_body.py' defines function 'create_matrial_body', which creates the 'MaterialBody' class object with given readius and initial parameters of points.
+
+3. methods/move_body.py
+
+'move_body.py' contains the 'move_material_body' function, which is responsible for the movement of the material body in accordance with the specified functions A(t) and B(t).
+
+4. methods/move_through_space.py
+
+'move_through_space.py' contains function 'move_through_space', which realises the body's movement in space and returns the trajectory of movement.
+
+5. methods/plot_trajectory.py
+
+'plot_trajectory.py' defines function 'plot_trajectory', which builds a plot of the trajectory of a material body.
+
+6. methods/plot_stream_lines.py
+
+'plot_stream_lines.py' contains function 'plot_stream_lines', which builds a plot of stream lines in space.
+
+--------------------------------------------------------------------------------------------
+
+'main.py' 
+
+'main.py' is the entry point to the program. Here the necessary abjects are created, the body moves, and trajectory and streamline graphs are constructed.
+

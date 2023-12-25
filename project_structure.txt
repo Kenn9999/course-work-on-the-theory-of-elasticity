@@ -1,0 +1,18 @@
+project_root/
+|-- main.py
+|-- models/
+|   |-- __init__.py
+|   |-- material_point.py
+|   |-- material_body.py
+|   |-- trajectory.py
+|   |-- space_point.py
+|   |-- stream_line.py
+|   |-- space.py
+|-- methods/
+|   |-- __init__.py
+|   |-- range_kutta.py
+|   |-- create_body.py
+|   |-- move_body.py
+|   |-- move_through_space.py
+|   |-- plot_trajectory.py
+|   |-- plot_stream_lines.py
